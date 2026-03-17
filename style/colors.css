@@ -1,0 +1,36 @@
+:root {
+
+    /* Backgrounds */
+    --color-bg-black-theme: linear-gradient(135deg, #050505 0%, #1a1a1a 100%);
+    --color-bg-black: #000000;
+    --color-bg-blackhole: #050505;
+    --color-bg-very-dark-gray-1: #1a1a1a;
+    --color-bg-very-dark-gray-2: #222222;
+    --color-bg-very-dark-gray-3: #333333;
+    --color-bg-very-dark-gray-4: #444444;
+    --color-bg-very-dark-gray-5: #555555;
+    --color-bg-very-pale: #fffafa;
+
+    /* Text Colors */
+
+    --color-txt-black: #000000;
+    --color-txt-very-dark-gray-3: #333333;
+    --color-txt-very-dark-gray-5: #555555;
+    --color-txt-very-pale: #fffafa;
+    --color-txt-light-red: #ff4d4d;
+
+    /* Interactive / Accent Colors / Hover */
+
+
+    /* Borders & Shadows */
+    --color-border-light-gray-1: #c0c0c0;
+    --color-border-light-gray-2:#cccccc;
+    --color-border-very-dark-gray-4: #444444;
+    --color-shadow-black: rgba(0, 0, 0, 0.2); /* Dont lose the transparency.*/
+
+
+
+
+
+
+}
