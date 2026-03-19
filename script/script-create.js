@@ -6,7 +6,8 @@ document.getElementById('blogForm').addEventListener('submit', function(e) {
     let content = document.getElementById('content').value;
     let imageUrl = document.getElementById('imageUrl').value;
     let imageFile = document.getElementById('imageFile').files[0];
-
+    
+    //add select of some choose this disable the others 
     
     let finalImage = imageUrl;
     if (imageFile) {

@@ -18,5 +18,5 @@ function sendMail(){
     }
     document.getElementById("formId").reset();
     //Replace The Alert with some thing  else
-    emailjs.send("service_id","template_id",parms).then(() => alert("Send successfully!")).catch((err) => console.log(err));
+    emailjs.send("service_w4uydcf","template_davyd6j",parms).then(() => alert("Send successfully!")).catch((err) => console.log(err));
 }
