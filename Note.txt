@@ -1,3 +1,0 @@
-Add length constraint to the text area in contact and also in create blog and also the blog card 
-use javascript ob
-
