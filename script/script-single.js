@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log(urlParams);
     const blogTitle = urlParams.get('title');
 
-    console.log(blogTitle);
+   
 
     const storedBlogs = localStorage.getItem("blogs");
     const blogs = storedBlogs ? JSON.parse(storedBlogs) : [];

@@ -1,32 +1,81 @@
 :root {
+    /*dark theme*/
     /* --- Backgrounds & Surfaces --- */
     --bg-main-gradient: linear-gradient(135deg, #050505 0%, #1a1a1a 100%);
     --bg-gradient-start: #050505;
-    --bg-gradient-end: #1a1a1a;  
-    
-    --color-surface-light: snow;    
-    --color-surface-dark: #121212;  
-    --color-input-bg: #f9f9f9;    
+    --bg-gradient-end: #1a1a1a;
+
+    --color-surface-light: snow;
+    --color-surface-dark: #121212;
+    --color-input-bg: #f9f9f9;
 
     /* --- Text Colors --- */
-    --text-main-dark: #000000;     
-    --text-main-light: #ffffff;    
-    --text-muted-dark: #555555;    
-    --text-muted-light: #a0a0a0;   
-    --text-silver: #c0c0c0;         
-    --text-error: #ff4d4d;          
+    --text-main-dark: #000000;
+    --text-main-light: #ffffff;
+    --text-muted-dark: #555555;
+    --text-muted-light: #a0a0a0;
+    --text-silver: #c0c0c0;
+    --text-error: #ff4d4d;
 
     /* --- Interactive & Accents --- */
-    --color-primary: #000000;      
-    --color-accent: #c0c0c0;        
-    --color-hover-dark: #222222;   
-    --color-hover-light: #ffffff;   
+    --color-primary: #000000;
+    --color-accent: #c0c0c0;
+    --color-hover-dark: #222222;
+    --color-hover-light: #ffffff;
 
     /* --- Borders & Shadows --- */
-    --border-light: #dddddd;        
-    --border-dark: #333333;         
-    --border-silver: #c0c0c0;      
-    
-    --shadow-soft: rgba(0, 0, 0, 0.2);  
-    --shadow-deep: rgba(0, 0, 0, 0.8);  
+    --border-light: #dddddd;
+    --border-dark: #333333;
+    --border-silver: #c0c0c0;
+
+    --shadow-soft: rgba(0, 0, 0, 0.2);
+    --shadow-deep: rgba(0, 0, 0, 0.8);
+}
+
+@media DISABLED {
+    :root {
+        /* --- Backgrounds & Surfaces --- */
+        --bg-main-gradient: linear-gradient(135deg, #2b2f1f 0%, #0f120a 100%);
+        --bg-gradient-start: #2b2f1f;
+        /* olive drab */
+        --bg-gradient-end: #0f120a;
+        /* near black green */
+
+        --color-surface-light: #d6d2b5;
+        /* faded canvas */
+        --color-surface-dark: #1b1f14;
+        /* dark military green */
+        --color-input-bg: #c7c2a3;
+        /* worn paper / khaki */
+
+        /* --- Text Colors --- */
+        --text-main-dark: #1a1a1a;
+        --text-main-light: #e8e6d9;
+        /* soft off-white */
+        --text-muted-dark: #4f5a3a;
+        /* muted olive */
+        --text-muted-light: #9ea88f;
+        /* dusty green-gray */
+        --text-silver: #b7b39a;
+        /* aged metal */
+        --text-error: #b04a3a;
+        /* muted red (military warning) */
+
+        /* --- Interactive & Accents --- */
+        --color-primary: #4b5320;
+        /* classic army green */
+        --color-accent: #8a7f4f;
+        /* brass / khaki accent */
+        --color-hover-dark: #3a3f2a;
+        --color-hover-light: #e0dcc4;
+
+        /* --- Borders & Shadows --- */
+        --border-light: #b6b28f;
+        --border-dark: #2c2f1e;
+        --border-silver: #8a7f4f;
+
+        --shadow-soft: rgba(0, 0, 0, 0.3);
+        --shadow-deep: rgba(0, 0, 0, 0.85);
+    }
+
 }
