@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
         latestblog.forEach(element => {
             Content += `<div class="blog-card">
                 <div class="card-image">
-                    <img src="${localStorage.getItem("userProfileImage")}" alt="">
+                    <img src="${element.image}" alt="">
                     <span class="category-label">${element.category}</span>
                 </div>
                 <div class="card-content">
