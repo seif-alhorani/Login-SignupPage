@@ -14,9 +14,9 @@ document.addEventListener("DOMContentLoaded",function(){
             return text;
         }
         
-        let htmlContent ="";
+        let htmlContent =" ";
         allBlogs.forEach(element =>{
-            htmlContent+=`<div class="blog-card">
+            htmlContent+=`<div class="blog-card" onclick="location.href='single-blog.html?title=${element.title}'">
                 <div class="card-image">
                     <img src="${element.image}" alt="">
                     <span class="category-label">${element.category}</span>

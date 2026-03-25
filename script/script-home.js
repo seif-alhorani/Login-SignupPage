@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let latestblog = [...blogs].reverse().slice(0, 4);
         let Content = "";
         latestblog.forEach(element => {
-            Content += `<div class="blog-card">
+            Content += `<div class="blog-card"  onclick="location.href='single-blog.html?title=${element.title}'">
                 <div class="card-image">
                     <img src="${element.image}" alt="">
                     <span class="category-label">${element.category}</span>
@@ -32,5 +32,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 });
- //problem with uploading img  function on create blog need to be fixed 
+
 
