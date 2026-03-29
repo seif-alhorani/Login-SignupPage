@@ -12,8 +12,13 @@ document.getElementById('blogForm').addEventListener('submit', function (e) {
 
     if (imageUrl) {
         saveblog(imageUrl);
-
+        imageUrl.addEventListener("input",function(){
+            imageFile.disabled=true;
+        })
     } else if (imageFile) {
+        imageFile.addEventListener("onchange",function(){
+            imageUrl.disabled=true;
+        })
         const reader = new FileReader();
         reader.onload = function (e) {
             const base64String = e.target.result;
