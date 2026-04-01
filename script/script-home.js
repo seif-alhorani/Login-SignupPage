@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     //     createdAt:JSON.stringify(data.publishedAt)
     // }));
      
-   // let allblogs = [...apiblogmap];
+   // let allblogs = [...blogs,...apiblogmap];
     let allblogs = [...blogs];
     if (allblogs.length === 0) {
         blog_container.innerHTML = `<h2 style="text-align: center; color: var(--text-muted-light);"> No blogs are avilable here be the first to create one </h2>`
