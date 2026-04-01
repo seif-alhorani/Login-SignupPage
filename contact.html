@@ -24,7 +24,7 @@
 </head>
 
 <body>
-     <nav>
+      <nav>
         <ul>
             <li>
                 <img class="logo" src="./assets/images/logo.jpg" alt="Logo">
@@ -32,7 +32,9 @@
             <li><a href="home.html">Home</a></li>
             <li><a href="create.html">Create Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><button onclick="location.href = 'login.html';">Login</button></li>
+            <li id="logoutbt"></li>
+            <li id="profpic"></li>
+            <li><button id="loginbt" onclick="location.href = 'login.html';">Login</button></li>
         </ul>
     </nav>
     <main>
@@ -110,7 +112,7 @@
         <span id="copyright"></span> 
     </footer>
     <script src="./script/script.js"></script>
-     <script src="./script/script-general.js"></script>
+    <script src="./script/script-general.js"></script>
     <script src="./script/script-sendmail.js"></script>
     <script src="./script/script-validation.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

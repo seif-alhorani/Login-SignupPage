@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="./style/colors.css">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/style-home.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -22,7 +23,10 @@
             <li><a href="home.html">Home</a></li>
             <li><a href="create.html">Create Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><button onclick="location.href = 'login.html';">Login</button></li>
+            <li id="logoutbt"><button  onclick="localStorage.clear(); location.href = 'login.html';">Logout</button></li>
+            <li id="profpic"><a href="profile.html"><img class="profile-pic" src="./assets/images/User.png" alt="profile-pic"></a>
+            </li>
+            <li><button id="loginbt" onclick="location.href = 'login.html';">Login</button></li>
         </ul>
     </nav>
     <main>
@@ -54,7 +58,7 @@
                     <span class="material-symbols-outlined">computer</span>
                 </div>
                 <div class="category-box">
-                    <span >Lifestyle</span>
+                    <span>Lifestyle</span>
                     <span class="material-symbols-outlined">style</span>
                 </div>
                 <div class="category-box">
@@ -82,7 +86,7 @@
         </section>
     </main>
     <footer>
-        <span id="copyright"></span> 
+        <span id="copyright"></span>
     </footer>
     <script src="./script/script.js"></script>
     <script src="./script/script-home.js"></script>

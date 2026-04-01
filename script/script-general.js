@@ -35,6 +35,17 @@ async function checkEmail() {
     if (!emaillist && location === "profile.html") {
         window.location.href = "login.html";
     }
+    if(emaillist && location === "profile.html"){
+        document.getElementById("logoutbt").innerHTML=`<button onclick="localStorage.clear(); location.href = 'login.html';">Logout</button>`;  
+        document.getElementById("profpic").style.display="none";
+    }
+    if(emaillist && location!=="profile.html"){
+        document.getElementById("logoutbt").innerHTML=`<button onclick="localStorage.clear(); location.href = 'login.html';">Logout</button>`;
+        document.getElementById("profpic").innerHTML=`<a href="profile.html"><img class="profile-pic" src="./assets/images/User.png" alt="profile-pic"></a>`;
+    }
+    if(emaillist){
+        document.getElementById("loginbt").style.display ="none";
+    }
 
 }
 
