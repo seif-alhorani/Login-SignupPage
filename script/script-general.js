@@ -36,11 +36,11 @@ async function checkEmail() {
         window.location.href = "login.html";
     }
     if(emaillist && location === "profile.html"){
-        document.getElementById("logoutbt").innerHTML=`<button onclick="localStorage.removeItem(emails); location.href = 'login.html';">Logout</button>`;  
+        document.getElementById("logoutbt").innerHTML=`<button onclick="localStorage.removeItem("emails"); location.href = 'login.html';">Logout</button>`;  
         document.getElementById("profpic").style.display="none";
     }
     if(emaillist && location!=="profile.html"){
-        document.getElementById("logoutbt").innerHTML=`<button onclick="localStorage.removeItem(emails); location.href = 'login.html';">Logout</button>`;
+        document.getElementById("logoutbt").innerHTML=`<button onclick="localStorage.removeItem("emails"); location.href = 'login.html';">Logout</button>`;
         document.getElementById("profpic").innerHTML=`<a href="profile.html"><img class="profile-pic" src="./assets/images/User.png" alt="profile-pic"></a>`;
     }
     if(emaillist){
