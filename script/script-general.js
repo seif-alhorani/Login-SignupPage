@@ -18,8 +18,8 @@ async function checkEmail() {
 
     let location = getpagename();
     console.log(location);
-    if (location === "create.html" || location === "blogs.html" || location === "single-blog.html") {
-        if (!emaillist) {
+    if (location === "create.html" || location === "blogs.html" || location === "single-blog.html"){
+        if(!emaillist) {
             Swal.fire({
                 title: "Error",
                 text: "Need an Account ",
@@ -35,13 +35,11 @@ async function checkEmail() {
     if (!emaillist && location === "profile.html") {
         window.location.href = "login.html";
     }
-    if(emaillist && location === "profile.html"){
-        document.getElementById("logoutbt").innerHTML=`<button onclick="localStorage.removeItem("emails"); location.href = 'login.html';">Logout</button>`;  
-        document.getElementById("profpic").style.display="none";
-    }
-    if(emaillist && location!=="profile.html"){
+    if(emaillist && location !=="profile.html"){
+        const checkstored= localStorage.getItem("userProfileImage");
+        let userProfileImage= checkstored ? checkstored : "./assets/images/User.png";
         document.getElementById("logoutbt").innerHTML=`<button onclick="localStorage.removeItem("emails"); location.href = 'login.html';">Logout</button>`;
-        document.getElementById("profpic").innerHTML=`<a href="profile.html"><img class="profile-pic" src="./assets/images/User.png" alt="profile-pic"></a>`;
+        document.getElementById("profpic").innerHTML=`<a href="profile.html"><img class="profile-pic" src="${userProfileImage}" alt="profile-pic"></a>`;
     }
     if(emaillist){
         document.getElementById("loginbt").style.display ="none";
