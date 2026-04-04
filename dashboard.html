@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo.jpg">
+    <link rel="stylesheet" href="./style/colors.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/style-home.css">
+    <link rel="stylesheet" href="./style/style-dashboard.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><img class="logo" src="./assets/images/logo.jpg" alt="Logo"></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="create.html">Create Blog</a></li>
+            <li id="logoutbt"></li>
+            <li id="profpic"></li>
+            <li><button id="loginbt" onclick="location.href = 'login.html';">Login</button></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="hero-section" style="margin-bottom: 20px;">
+            <h1>My Dashboard</h1>
+            <p>Manage your blogs, edit, or delete them.</p>
+        </section>
+
+        <div class="dashboard-controls">
+            <input type="text" id="searchInput" placeholder="Search by title...">
+            <select id="categoryFilter">
+                <option value="All">All Categories</option>
+                <option value="Tech">Tech</option>
+                <option value="Design">Design</option>
+                <option value="Business">Business</option>
+                <option value="Lifestyle">Lifestyle</option>
+                <option value="Travel">Travel</option>
+                <option value="Food">Food</option>
+            </select>
+            <button id="sortBtn">Sort by Date (Newest First)</button>
+        </div>
+
+        <section class="blog-section" id="dashboard-container">
+            </section>
+    </main>
+
+    <footer>
+        <span id="copyright"></span> 
+    </footer>
+    <script src="./script/script.js"></script>
+    <script src="./script/script-general.js"></script>
+    <script src="./script/script-dashboard.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

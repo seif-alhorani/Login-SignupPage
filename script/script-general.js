@@ -10,7 +10,7 @@ function Year() {
     const d = new Date();
     let year = d.getFullYear();
     document.getElementById("copyright").innerHTML = `<span id="dates"> © ${year} Blog Platform</span>`;
-   document.addEventListener('contextmenu', event => event.preventDefault());
+   
 }
 
 async function checkEmail() {
@@ -43,8 +43,11 @@ async function checkEmail() {
         document.getElementById("logoutbt").innerHTML=`<button onclick="localStorage.removeItem('emails'); location.href='login.html';">Logout</button>`;
         document.getElementById("profpic").innerHTML=`<a href="profile.html"><img class="profile-pic" src="${userProfileImage}" alt="profile-pic"></a>`;
     }
+    if(emaillist && (location === "login.html" || location === "signup.html"))
+         window.location.href = "home.html";
     if(emaillist){
         document.getElementById("loginbt").style.display ="none";
+       
     }
 
 }
